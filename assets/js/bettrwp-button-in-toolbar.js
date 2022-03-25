@@ -32,11 +32,11 @@
 
             if ( !document.getElementById( button_id ) ) {
 
-                var toolbalEl = editorEl.querySelector( '.edit-post-header__toolbar' );
+                var toolbalEl = editorEl.querySelector( '.edit-post-header__settings' );
 
                 if( toolbalEl instanceof HTMLElement ) {
 
-					toolbalEl.insertAdjacentHTML( 'afterend', button_html );
+					toolbalEl.insertAdjacentHTML( 'afterbegin', button_html );
 					const getButton = document.querySelector( '.editor-post-set-as-homepage' );
 
 					getButton.addEventListener( 'click', () => {
